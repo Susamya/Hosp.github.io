@@ -1,0 +1,536 @@
+<!DOCTYPE html>  
+ <html>  
+      <head>  
+           <title>Webslesson Tutorial | Search HTML Table Data by using JQuery</title>  
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+      </head>  
+      <body>  
+           <br /><br />  
+           <div class="container" style="width:900px;">  
+                <h2 align="center">Search Hospitals</h2>  
+                <h3 align="center">Enter Your Pincode</h3>                 
+                <br /><br />  
+                <div align="center">  
+                     <input type="text" name="search" id="search" class="form-control" />  
+                </div>  
+                <br /><br />  
+                <div class="table-responsive" >  
+                     <table class="table table-bordered" id="employee_table">  
+                          <tr>  
+                               <th width="5%">Name</th>  
+                               <th width="25%">Contacts</th>  
+                               <th width="35%">Address</th>    
+                          </tr>  
+                                                   <tr>  
+                               <td>AMRI Hospital, Dhakuria</td>  
+                               <td>033 6680 0000</td>  
+                               <td>Block-A, Scheme-L11 P-4&5, Gariahat Rd, Dhakuria, Kolkata, West Bengal 700029</td>  
+                          </tr>  
+                                                   <tr>  
+                               <td>AMRI Hospital, Mukundupur</td>  
+                               <td>033 6680 0000</td>  
+                               <td>230 Barakhola Lane, behind Metro Cash n Carry, PurbaJadavpur, Mukundapur, Kolkata, West Bengal 700099</td>
+                          </tr>  
+                                                   <tr>  
+                               <td>AMRI Hospital, Salt lake</td>  
+                               <td>033 6606 3800</td>  
+                               <td>16 17, JC Block Lane, Broadway Rd, Sector III, Bidhannagar, Kolkata, West Bengal 700098</td>  
+                          </tr>  
+                                                   <tr>  
+                               <td>Apollo Gleneagles Hospital</td>  
+                               <td>033 2320 3040</td>  
+                               <td>58, Canal Circular Rd, Kadapara, PhoolBagan, Kankurgachi, Kolkata, West Bengal 700054</td>  
+                          </tr>  
+                                                   <tr>  
+                               <td>Belle Vue Clinic</td>  
+                               <td>033 2287 2321</td>  
+                               <td>9, Dr. U. N. Brahmachari Street (Formerly Loudon Street), Elgin, Kolkata, West Bengal 700017</td>   
+                          </tr>  
+                                                   <tr>  
+                               <td>Bhagirathi Neotia Hospital, Kolkata</td>  
+                               <td>033 4040 5000</td>  
+                               <td>2, Rawdon St, MullickBazar, Park Street area, Kolkata, West Bengal 700017</td>   
+                          </tr>  
+                                                   <tr>  
+                               <td>Bhagirathi Neotia Woman and Child Care Centre, New Town</td>  
+                               <td>03366405000</td>  
+                               <td>DGBlock(Newtown),ActionAreaI,Newtown,NewTown,WestBengal700156</td>    
+                          </tr>  
+                                                   <tr>  
+                               <td>Calcutta Heart Clinic, Salt Lake</td>  
+                               <td>03323585735</td>  
+                               <td>3, 1st Cross Rd, HC Block, Sector III, Bidhannagar, Kolkata, West Bengal 700106</td>   
+                          </tr>  
+                                                   <tr>  
+                               <td> Charnock Hospital</td>  
+                               <td>03340500500</td>  
+                               <td>RGM-2103, Tegharia Major Arterial Road, Dhalipara, Tegharia, Newtown, Kolkata, West Bengal 700157</td>  
+                          </tr>  
+                                                   <tr>  
+                               <td>CMRI</td>  
+                               <td>-</td>  
+                               <td>Alipore, Kolkata, West Bengal 700027</td>  
+                          </tr>  
+                                                   <tr>  
+                               <td>Columbia Asia Hospital , Salt Lake</td>  
+                               <td>03366003300</td>  
+                               <td>IB-193, Broadway Rd, Sector III, Bidhannagar, Kolkata, West Bengal 700091</td>  
+                          </tr>  
+                                                   <tr>  
+                               <td>Desun Hospital</td>  
+                               <td>09051715171</td>  
+                               <td>Desun More, 720, Eastern Metropolitan Bypass, Golpark, Sector I, Kasba, Kolkata, West Bengal 700107</td>
+                          </tr>  
+                                                   <tr>  
+                               <td>Divine Nursing Home</td>  
+                               <td>033 4015 6789</td>  
+                               <td>11A, Avinash Chandra BanerjeeLn, Sura Cross Lane, PhoolBagan, Beleghata, Kolkata, West Bengal 700010</td>  
+                          </tr>  
+                                                   <tr>  
+                               <td>EEDF Medicare Centre (Sri AurobindoSeva Kendra)</td>  
+                               <td>033 4017 1717</td>  
+                               <td>1H, Gariahat Rd S, Jodhpur Park, Kolkata, West Bengal 700068</td>  
+                          </tr>  
+                                                   <tr>  
+                               <td>161</td>  
+                               <td>Glenda J. Stewart</td>  
+                               <td>3482 Pursglove Court, Rossburg, OH 45362</td>
+                          </tr>  
+                                                   <tr>  
+                               <td>Fortis Hospital Ltd.</td>  
+                               <td>033 6628 4444</td>  
+                               <td>730, Eastern Metropolitan Bypass, Anandapur, East Kolkata Twp, Kolkata, West Bengal 700107</td>  
+                          </tr>  
+                                                   <tr>  
+                               <td>Greenview and nursing home</td>  
+                               <td>(33) 25812429</td>  
+                               <td>231/1, R.B.C.Road, North 24 Parganas, West Bengal  743165 </td>  
+                          </tr>  
+                                                   <tr>  
+                               <td>Aditya Medical Park</td>  
+                               <td>(33) 25843586 </td>  
+                               <td>Koyra, Kadambagachi, Barasat, , North 24 Parganas, West Bengal  700125</td>  
+                          </tr>  
+                                                   <tr>  
+                               <td>Dhokra Rural Development Sebha Sangha</td>  
+                               <td>(+91) 9933193270</td>  
+                               <td>Vill Dhokra, Po Banglani,  North 24 Parganas, West Bengal  743286</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Sarada Seva Sadan</td>  
+                               <td>(33) 25920730</td>  
+                               <td>114, Barsat Road, Barrackpore, North 24 Parganas, West Bengal  700122 </td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Nirupama Seva Sadan</td>  
+                               <td>(33) 25023104</td>  
+                               <td>460/2, R B C Road,  North 24 Parganas, West Bengal 743165</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Disha Eye Hospital</td>  
+                               <td>8016800719</td>  
+                               <td>196, Chakraborty Para, Barrackpore, Ghoshpara Road, Bengal Enamel, North 24 Parganas, West Bengal 743122</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Netraloke Eye Hospital</td>  
+                               <td>(33) 25027064</td>  
+                               <td>Naihati, ( Deshbandhu Pally, 6 No. Bijoynagar) North 24 Parganas, West Bengal  743165</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Ashokenagar State General Hospital</td>  
+                               <td>(3216) 222488 / 221074</td>  
+                               <td>Ashoknagar, West Bengal 743222</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Namita Maternity And Nursing Home</td>  
+                               <td>(33) 25615619</td>  
+                               <td>364, Ground Floor, Garulia Main Road, North 24 Parganas, West Bengal   743133</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Naihati State General Hospital</td>  
+                               <td>(33) 25812933</td>  
+                               <td>Naihati, West Bengal 743165</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Habra State General Hospital</td>  
+                               <td>-</td>  
+                               <td>Habra,  North 24 Parganas, West Bengal   743268</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Spandan Medicare</td>  
+                               <td>(33) 24270050</td>  
+                               <td>16 Ns Road, Kodalliabattala, North 24 Paraganas, West Bengal 700146</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Bina Optical & Eye Clinic</td>  
+                               <td>(+91) 9733053146</td>  
+                               <td>Bongaon Bagda Road , Bongaon, , North 24 Parganas, West Bengal   743235</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Avinaba Eye Hospital</td>  
+                               <td>(3215) 264270</td>  
+                               <td>Bagdha Road, , North 24 Parganas, West Bengal   743270 </td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Netra Loke</td>  
+                               <td>(+91) 9143735440</td>  
+                               <td>6 Bijay Nagar Road, , North 24 Parganas, West Bengal   743165</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Charnock Hospital</td>  
+                               <td> (33) 25735708</td>  
+                               <td>Junction Of Vip Road, New Town Approach Road, Opp To Club Town, Teghoria, North 24 Paraganas,  West Bengal   700052 </td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Sankara Jyoti Eye Research Institute</td>  
+                               <td>(33) 25831616</td>  
+                               <td>5/1, M S M Road Khardah Next Balaram Govt. Hospital, North 24 Parganas, West Bengal  700116 </td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Sanjeevani Nursing Home</td>  
+                               <td>9152220976</td>  
+                               <td> Garulia Main Road, Shyamnagar, North 24 Parganas , West Bengal 743127</td> 
+                          </tr>  
+                                                   <tr>
+                               <td> Multi Care Hospital</td>  
+                               <td>7044699047</td>  
+                               <td> A-9/14, S,Kalyani, Kolkata, North 24 Parganas, West Bengal 743145</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Bongaon Nursing Home</td>  
+                               <td>8926770900</td>  
+                               <td>Amlapara, Bongaon, North 24 Parganas, West Bengal 743235 </td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Jibandeep Nursing Home</td>  
+                               <td>(33)232002</td>  
+                               <td>Angrall Bazar, Bangoan, North 24 Parganas, Ramnagar Road, West Bengal 743235</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Haroa Hospital</td>  
+                               <td>03217-248305</td>  
+                               <td>Haroa, North 24 Paraganas, West Bengal 743425</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Bangoan Sub Divisional Hospital</td>  
+                               <td>03215-255073</td>  
+                               <td>2, Shaktigarh Road, Bangoan, North 24 Parganas, West Bengal 743235</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Minakhan Hospital</td>  
+                               <td>033-260204</td>  
+                               <td>Minakhan, Deuli Road, North 24 Parganas, West Bengal 743425</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Matri Sadan Hospital</td>  
+                               <td>03216-221388</td>  
+                               <td>Ashoknagar, North 24 parganas, West Bengal 743222</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Howrah District Hospital</td>  
+                               <td>033 2641 8818</td>  
+                               <td>10, 11 Biplabi haren ghosh sarani, Howrah, West Bengal 711101</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Howrah Orthopaedic Hospital</td>  
+                               <td>03340880000</td>  
+                               <td>Church Road, Howrah Railway Station, Howrah, West Bengal 711101</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Howrah Lions Hospital</td>  
+                               <td>033 2638 5470</td>  
+                               <td>9, Nityadhan Mukherjee Rd, Howrah Railway Station, Howrah, West Bengal 711101</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>N H Narayana Multispeciality Hospital</td>  
+                               <td>083348 30003</td>  
+                               <td>Andul Rd, near Chunabati, Podara, Mourigram, Howrah, West Bengal 711109</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Narayana Superspeciality Hospital, Howrah</td>  
+                               <td>090516 75050</td>  
+                               <td>120, 1, Andul Rd, near Nabanna, Shibpur, Howrah, West Bengal 711103</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Peoples Meditreat Pvt Ltd</td>
+                               <td>033 2640 9142</td>  
+                               <td>262, Netaji Subhash Rd, Surki Kal, Naora, Shibpur, Howrah, West Bengal 711101</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Biral Seva Sadan</td>  
+                               <td>913326676444</td>  
+                               <td>Belepole, Shibpur, Howrah, West Bengal 711104</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Shree Jain Hospital and Research Centre Howrah</td>  
+                               <td>033 2641 5831</td>  
+                               <td>493, B/12, Grand Trunk Rd, Choura Bustee, Shibpur, Kolkata, West Bengal 711102</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>SC BAGCHI AROGYA SADAN</td>  
+                               <td>033 2627 0709</td>  
+                               <td>43/5, Ram Charan Sett Rd, Santragachi, Ramrajatala, Howrah, West Bengal 711104</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Apollo Clinic - Howrah</td>  
+                               <td>081000 02010</td>  
+                               <td>168, Grand Trunk Rd, Naora, Shibpur, Howrah, West Bengal 711102</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>South Howrah State General Hospital</td>  
+                               <td>033 2668 5512</td>  
+                               <td>Laxmi Narayan Tala Road, post:b. garden, Shibpur, Botanical Garden Area, Howrah, West Bengal 711103</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>ILS Hospitals, Howrah</td>  
+                               <td>033 4088 0000</td>  
+                               <td>98, Dr Abani Dutta Rd, opposite Golabari, PS, Howrah, West Bengal 711101</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Thalassemia Hospital</td>  
+                               <td>098047 14833</td>  
+                               <td>50, Panchanantala Rd, Kadam Tala, Howrah, West Bengal 711101</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Nabanir Hospital & Diagnostics</td>  
+                               <td>098360 06000</td>  
+                               <td>37/2, Kalabagan Ln, opp. Dumurjala Stadium, Baruipara, Ichapur, Howrah, West Bengal 711104</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Howrah Nursing Home</td>  
+                               <td>033 2641 5496</td>  
+                               <td>80, 1, Chintamani Dey Rd, Maidan, Kadam Tala, Howrah, West Bengal 711101</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>ECHS Polyclinic Howrah</td>  
+                               <td>033 2627 0302</td>  
+                               <td>2/3/2, Bhattacharya Para Ln, Ghosal Bari, Santragachi, Ramrajatala, Howrah, West Bengal 711104</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Benuban Health care & Diagnostic Center</td>
+                               <td>033 2653 4351</td>  
+                               <td>Amta Road, Near Kudiram Club Taluk Japanigate, Balitikuri, Howrah, West Bengal 711113</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>SEEMA institute of Healthcare</td>  
+                               <td>090733 72141</td>  
+                               <td>31/5, Kalabagan Ln, Baruipara, Ichapur, Howrah, West Bengal 711104</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Belur ESI Hospital</td>  
+                               <td>033 2646 3061</td>  
+                               <td>P.O.- Sapuipara, P.S.- Nischinda, Howrah, West Bengal 711227</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>MB Polyclinic</td>  
+                               <td>9830190228</td>  
+                               <td>189, Grand Trunk Rd, Naora, Shibpur, Howrah, West Bengal 711102</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Susrut Eye Foundation & Research Center </td>
+                               <td> 916290966537</td>  
+                               <td>62, 1, Netaji Subhash Rd, Near Kalibabur Bazar, Kadam Tala, Howrah, West Bengal 711101</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>ESI Hospital</td>  
+                               <td>033 2653 0114</td>  
+                               <td>Ramrajatala, Howrah, West Bengal 711113</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>The Kalpana Clinic & Laboratory</td>  
+                               <td>26272846</td>  
+                               <td>14/3, Ram Charan Sett Rd, Santragachi, Ramrajatala, Howrah, West Bengal 711104 </td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Medicare Clinic Pvt Ltd</td>  
+                               <td>033 2638 1777</td>  
+                               <td>138, Grand Trunk Road, South, Shibpur, Howrah, West Bengal 711102</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Belur State General Hospital</td>  
+                               <td>072782 74856</td>  
+                               <td>94/E, Dharmatala Rd, Belur, Bally, Howrah, West Bengal 711202</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Baltikuri ESI Hospital</td>  
+                               <td> 033 2653 0114</td>  
+                               <td>Baltikuri, P.O, Bankra, Howrah, West Bengal 711403</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Satyabala ID Hospital</td>  
+                               <td>-</td>  
+                               <td>233, Grand Trunk Rd, Surendranagar, Liluah, Howrah, West Bengal 711204</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Bankra Central Nursing Home</td>  
+                               <td>098302 86912</td>  
+                               <td>Kabar Para Rd, Bankra, Howrah, West Bengal 711403 </td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Domjur Rural Hospital</td>  
+                               <td>033 2670 1427</td>  
+                               <td>Amta Rd, Baruipara, Domjur, Howrah, West Bengal 711405</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>ESI Hospital Uluberia</td>  
+                               <td> 033 2661 1014</td>  
+                               <td>Mumbai Highway, Jadurberia PO, Uluberia, West Bengal 711316</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Eastern Railway Hospital, Liluah</td>  
+                               <td>-</td> 
+                               <td>1/4, Liluah, Howrah, West Bengal 711204</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Uluberia Sub Divisional Hospital</td>  
+                               <td>091638 25620</td>  
+                               <td>Station Road, Bazarpara, Uluberia, Howrah, West Bengal 711315</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Care and Cure Nursing Home</td>  
+                               <td> 033 2661 0473</td>  
+                               <td>O T Road, Bazarpara, Uluberia, Howrah, West Bengal 711315</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Lakhotia Medical Centre (Shibpur)</td>  
+                               <td>082309 37016</td>  
+                               <td>180, G T Road South, Shibpur, G T Road South, Howrah, West Bengal 711102</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Bally Kedarnath Arogya Bhaban & Apex Club Bally</td>  
+                               <td>033 2654 9108</td>  
+                               <td>403, Grand Trunk Rd, Bally, Howrah, West Bengal 700201</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Liluah Lions Medi Aid Centre</td>  
+                               <td>033 2645 3376</td>  
+                               <td>7, Guha Park Rd, Liluah, Howrah, West Bengal 711204</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Goutam Medical Hall</td>  
+                               <td>098317 07242</td>  
+                               <td>176, Benaras Road,North Howrah Salkia, Howrah, West Bengal 711106 </td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Bally Nursing Home</td>  
+                               <td>-</td>  
+                               <td>Grand Trunk Rd, Bally, Howrah, West Bengal 711201</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Gandhi Memorial Hospital</td>  
+                               <td>-</td>  
+                               <td>Block A, Kalyani, West Bengal 741235</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>SNR Carnival Hospital</td>  
+                               <td>-</td>  
+                               <td>A-9/16(S), Nadia, Kalyani, West Bengal 741235</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Kalyani ESI Hospital</td>  
+                               <td>-</td>  
+                               <td>A - Block, Nadia District, Kalyani, West Bengal 741235</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>JNM Hospital</td>  
+                               <td>913325828102</td>  
+                               <td>Kolkata JNM Hospital quarter E/88, Kalyani, West Bengal 741235</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Global Hospital, Krishnanagar</td>  
+                               <td>913346000450</td>  
+                               <td>Bhatjangla ( Krishnanagar), NH-34, Opp Hotel Haveli, Krishnanagar, West Bengal 741102</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Manorama Hospitex Pvt. Ltd.</td>  
+                               <td>918373091219</td>  
+                               <td>172, Beharampur Road, Dist:Nadia, Ranaghat, West Bengal 741201</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Jaymala Memorial Hospital</td>  
+                               <td>918296463015</td>  
+                               <td>A-1/2(C.A, A1, Block A1, Block A, Kalyani, West Bengal 741235</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Krishnanagar Sadar District Hospital</td>  
+                               <td>-</td>  
+                               <td>Krishnanagar, West Bengal 741101</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Sushrut Hospital</td>  
+                               <td>913325827777</td>  
+                               <td>A9x-/4 (CA),, Kalyani, West Bengal 741235</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Kalyani hospital</td>  
+                               <td>-</td>  
+                               <td>Central Cir, B5, Block B, Kolkata, West Bengal 741235</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Shaktinagar Zilla Hospital</td>  
+                               <td>913472224873</td>  
+                               <td>Krishnanagar, West Bengal 741102</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Minerva D.S.A. Hospital</td>  
+                               <td>-</td>  
+                               <td>Bhatjangla, West Bengal 741101</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Ranaghat Sub-Divisional Hospital</td>  
+                               <td>919434852424</td>  
+                               <td>Sreenath Pur, Ranaghat, West Bengal 741201</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Bagula Rural Hospital</td>  
+                               <td>913473272552</td>  
+                               <td>Hospitalpara, Bagula, West Bengal 741502</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Nabadwip State General Hospital</td>  
+                               <td>913472239111</td>  
+                               <td>56, Pratapnagar, Nabadwip, West Bengal 741302</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Chakdaha State General Hospital </td>  
+                               <td>913473242500</td>  
+                               <td>Rabindranagar, Rajbagan, Chakdaha, West Bengal 741222</td> 
+                          </tr>  
+                                                   <tr>
+                               <td>Kanchrapara Youth For Development</td>  
+                               <td>(33) 28461527</td>  
+                               <td>558/1 Siraj Mondal Road, , Po- Kanchrapara, , North 24 Parganas, West Bengal  743145</td>  
+                          </tr>  
+                                              </table>  
+                </div>  
+           </div>  
+      </body>  
+ </html>  
+ <script>  
+      $(document).ready(function(){  
+           $('#search').keyup(function(){  
+                search_table($(this).val());  
+           });  
+           function search_table(value){  
+                $('#employee_table tr').each(function(){  
+                     var found = 'false';  
+                     $(this).each(function(){  
+                          if($(this).text().toLowerCase().indexOf(value.toLowerCase()) >= 0)  
+                          {  
+                               found = 'true';  
+                          }  
+                     });  
+                     if(found == 'true')  
+                     {  
+                          $(this).show();  
+                     }  
+                     else  
+                     {  
+                          $(this).hide();  
+                     }  
+                });  
+           }  
+      });  
+ </script>
